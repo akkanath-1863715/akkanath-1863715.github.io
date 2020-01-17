@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>HTML Tags</title>
+		<link rel="stylesheet" type="text/css" href="anExternal.css">
 	</head>
 	<body>
 		<h1>HTML Tags: Original Work</h1>
@@ -12,9 +13,22 @@
 			<img src="https://images-na.ssl-images-amazon.com/images/I/51QIooJLdkL._SX425_.jpg" title="Bongo Cat" style="width:50px;height:50px;margin:5px">
 			<img src="https://i.redd.it/fo417hhz0gn21.jpg" title="Blessed Doggo" style="width:50px;height:50px;margin:5px">
 		<h2>One More Command</h2>
-			<p style="color:coral">Coral Color!</p>
+			<p style="color:darkviolet; opacity:0.5">This text is in darkviolet with opacity 0.5.</p>
 		<h2>Text Centered on Photo</h2>
-			<img src="https://i.redd.it/qrsf34kar5b41.jpg" title="Pikachu" style="width:300px;height:300px;text-align:center;position:relative;color:white;">
-			<p style="position:relative;top:50%;left:50%;transform:translate(-50%,-50%)">Pikachu</p>
+			<div style="position:relative; width:300px; height:300px;">
+				<img src="https://i.redd.it/qrsf34kar5b41.jpg" title="Pikachu" style="width:300px; height:300px;">
+				<p style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">Pikachu</p>
+			</div>
+		<h2>20 Pixels Margin</h2>
+			<img src="https://i.redd.it/lytn0v79w0b41.jpg" title="Blessed_Minecraft" style="margin:20px 20px 20px 20px;">
+		<h2>Dotted Line Border</h2>
+			<p style="border-style:dotted; width:300px">This is the line with dotted border.</p>
+		<h2>External style sheet</h2>
+			<p>The background color is lightgreen.</p>
+		<h2>Floated Element</h2>
+			<img src="https://i.redd.it/th03nlbdwza41.jpg" style="float:left; width:300px; height:300px;">
+			<p>Some text to prove that this img is floated.</p>
+		<h2 style="clear:both;">Rounded Border</h2>
+			<p style="border-radius:25px; border:2px solid white; padding:10px; width:300px;">The border of this text is rounded.</p>
 	</body>
 </html>
