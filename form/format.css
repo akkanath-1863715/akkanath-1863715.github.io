@@ -1,0 +1,48 @@
+fieldset{
+	padding:.35em .625em .75em;
+	margin:0 2px;
+	border:1px solid #c0c0c0;
+}
+
+legend{
+	padding:auto;
+	width:100%;
+	text-align:center;
+	border:1px solid #c0c0c0;
+	background-color:#333;
+	color:#fff;
+	font-weight:bold;
+	font-family:"Calibri";
+}
+
+body{
+	font-family:"Calibri"/*,Calibri,Arial,sans-serif*/;
+	/*font-size:14px;
+	/*line-height:1.428571429;
+	color:#333;
+	background-color:#fff;*/
+}
+
+.form-group{
+	/*display:inline-block;*/
+	vertical-align:middle;
+	margin-bottom:10px;
+}
+
+.left-block{
+	width:450px;
+}
+
+.right-block{
+	width:45%;
+}
+
+.lr-block span{
+	display:inline-block;
+	/*border:1px solid #000;*/
+}
+
+.radio-label{
+	display:inline-block;
+	width:300px;
+}
