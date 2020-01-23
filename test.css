@@ -1,7 +1,10 @@
-#Header{
-	width: 500px;
+#Header, #Content{
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#Header{
+	width: 500px;
 }
 
 #LeftNav{
@@ -12,8 +15,6 @@
 
 #Content{
 	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 15px;
 }
 
@@ -22,25 +23,32 @@ ul{
 	padding: 0px;
 }
 
-#Header h1{
-	font-size: 60px;
-	font-family: "Passion One";
+#Header h1, h3{
 	color: #FFBC00;
-	font-weight: bold;
+	font-family: "Passion One";
 }
 
-p{
+#Header h1{
+	font-size: 60px;
 	font-weight: bold;
-	color: white;
-	font-family: "Arial";
 }
 
 h3{
-	color: #FFBC00;
 	font-size: 40px;
-	font-family: "Passion One";
 	margin-bottom: 0px;
-	/*font-weight: normal;*/
+}
+
+p, a{
+	font-weight: bold;
+	color: white;
+}
+
+p{
+	font-family: "Arial";
+}
+
+a{
+	font-size: 24px;
 }
 
 div{
@@ -52,10 +60,4 @@ div{
 
 body{
 	background-image: url('./introToCss/dark_wood.png');
-}
-
-a{
-	color: white;
-	font-weight: bold;
-	font-size: 24px;
 }
