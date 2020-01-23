@@ -51,7 +51,7 @@ div{
 }
 
 body{
-	background-image: url('dark_wood.png');
+	background-image: url('./introToCss/dark_wood.png');
 }
 
 a{
