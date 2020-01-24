@@ -18,16 +18,16 @@
 	<fieldset class="form-horizontal">
 		<legend>Applicant Information</legend>
 		<div class="form-group">
-			<label class="col-sm-3 control-label">Full name</label>
-			<div class="col-sm-9">
+			<label class="control-label">Full name</label>
+			<div class="">
 				<input class="form-control" type="text" name="name_last" placeholder="Last Name">
 				<input class="form-control" type="text" name="name_first" placeholder="First Name">
 				<input class="form-control" type="text" name="name_mi" placeholder="M.I.">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-sm-3 control-label">Address</label>
-			<div class="col-sm-9">
+			<label class="control-label">Address</label>
+			<div class="">
 				<input class="form-control" type="text" name="address_street" placeholder="Street Address">
 				<input class="form-control" type="text" name="address_unit" placeholder="Apartment/Unit #">
 				<input class="form-control" type="text" name="address_city" placeholder="City">
@@ -89,25 +89,24 @@
 			</div>
 		</div>
 		<div class="form-group lr-block">
-			<span class="col-sm-9 left-block">
-				<label class="col-sm-3 control-label">Phone</label><br>
+			<span class="left-block">
+				<label class="control-label">Phone</label><br>
 				<input class="form-control" type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="xxx-xxx-xxxx">
 			</span>
-			<span class="col-sm-9 right-block">
-				<label class="col-sm-3 control-label">Email</label><br>
+			<span class="right-block">
+				<label class="control-label">Email</label><br>
 				<input class="form-control" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" name="email">
 			</span>
 		</div>
 		<div class="form-group lr-block">
-			<label class="col-sm-3 control-label">Citizenship and Authorization</label><br>
-			<span class="col-sm-9 left-block">
+			<span class="left-block">
 			<label class="radio-label">Are you a citizen of the United States?</label>
 				<span class="radio-group">
 					<input type="radio" name="citizen" value="yes">Yes
 					<input type="radio" name="citizen" value="no">No
 				</span>
 			</span>
-			<span class="col-sm-9 right-block">
+			<span class="right-block">
 			<label class="radio-label">Are you authorized to work in the U.S.?</label>
 				<span class="radio-group">
 					<input type="radio" name="authorized" value="yes">Yes
@@ -116,122 +115,188 @@
 			</span>
 		</div>
 		<div class="form-group lr-block">
-			<label class="col-sm-3 control-label">Former Employee</label><br>
-			<span class="col-sm-9 left-block">
+			<span class="left-block">
 			<label class="radio-label">Have you ever worked for this company?</label>
 				<span class="radio-group">
 					<input type="radio" name="former_employee" value="yes">Yes
 					<input type="radio" name="former_employee" value="no">No
 				</span>
 			</span>
-			<span class="col-sm-9 right-block">
+			<span class="right-block">
 			If yes, when?
 				<input type="text" name="former_employee_time">
 			</span>
 		</div>
+		<div class="form-group lr-block">
+			<span class="left-block">
+			<label class="radio-label">Have you ever been convicted of felony?</label>
+				<span class="radio-group">
+					<input type="radio" name="felony" value="yes">Yes
+					<input type="radio" name="felony" value="no">No
+				</span>
+			</span>
+			<span class="right-block">
+			If yes, explain:
+				<textarea type="text" name="felony_explain"></textarea>
+			</span>
+		</div>
+		
 	</fieldset>
 	
 	<p>&nbsp;</p>
 
 	<fieldset>
-		<legend>Availability</legend>
-		<div class="form-group row">
-			<label class="col-sm-12 control-label">Are you legally able to be employed in this country?</label>
-			<div class="col-sm-offset-1 col-sm-11">
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="yes">Yes
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="no">No
-					</label>
-				</div>
-			</div>
+		<legend>Education</legend>
+		<div class="form-group lr-block">
+			<span class="left-block">
+				Highschool:
+				<input type="text" name="highschool">
+			</span>
+			<span class="right-block">
+				Address:
+				<input type="text" name="highschool_address">
+			</span><br>
+			<span class="left-block">
+				From:
+				<input type="numerical" name="highschool_from" maxlength=4 size=6>
+				To:
+				<input type="numerical" name="highschool_to" maxlength=4 size=6>
+			</span>
+			<span class="right-block">
+				<label class="radio-label" style="width:150px">Did you graduate?</label>
+				<span class="radio-group">
+					<input type="radio" name="highschool_grad" value="yes">Yes
+					<input type="radio" name="highschool_grad" value="no">No
+				</span>
+			</span>
 		</div>
-		<div class="form-group row">
-			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
-			<div class="col-sm-offset-1 col-sm-11">
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_pt" value="parttime">
-						Part time
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_ft" value="fulltime">
-						Full time
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_sl" value="seasonal">
-						Seasonal
-					</label>
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_tp" value="temporary">
-						Temporary
-					</label>
-				</div>
-			</div>
+		<div class="form-group lr-block">
+			<span class="left-block">
+				College:
+				<input type="text" name="college">
+			</span>
+			<span class="right-block">
+				Address:
+				<input type="text" name="college_address">
+			</span><br>
+			<span class="left-block">
+				From:
+				<input type="numerical" name="college_from" maxlength=4 size=6>
+				To:
+				<input type="numerical" name="college_to" maxlength=4 size=6>
+			</span>
+			<span class="right-block">
+				<label class="radio-label" style="width:150px">Did you graduate?</label>
+				<span class="radio-group">
+					<input type="radio" name="college_grad" value="yes">Yes
+					<input type="radio" name="college_grad" value="no">No
+				</span>
+			</span>
 		</div>
-		<div class="form-group row">
-			<label class="col-sm-12 control-label">Hours available</label>
-			<div class="col-sm-12">
-				<table class="table table-bordered">
-					<tbody><tr>
-						<td></td>
-						<th>Sun</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-						<th>Thu</th>
-						<th>Fri</th>
-						<th>Sat</th>
-					</tr>
-					<tr>
-						<th>From</th>
-						<td><input class="form-control" type="time" name="su_from"></td>
-						<td><input class="form-control" type="time" name="mo_from"></td>
-						<td><input class="form-control" type="time" name="tu_from"></td>
-						<td><input class="form-control" type="time" name="we_from"></td>
-						<td><input class="form-control" type="time" name="th_from"></td>
-						<td><input class="form-control" type="time" name="fr_from"></td>
-						<td><input class="form-control" type="time" name="sa_from"></td>
-					</tr>
-					<tr>
-						<th>Until</th>
-						<td><input class="form-control" type="time" name="su_until"></td>
-						<td><input class="form-control" type="time" name="mo_until"></td>
-						<td><input class="form-control" type="time" name="tu_until"></td>
-						<td><input class="form-control" type="time" name="we_until"></td>
-						<td><input class="form-control" type="time" name="th_until"></td>
-						<td><input class="form-control" type="time" name="fr_until"></td>
-						<td><input class="form-control" type="time" name="sa_until"></td>
-					</tr>
-				</tbody></table>
-			</div>
+		<div class="form-group lr-block">
+			<span class="left-block">
+				Other:
+				<input type="text" name="other">
+			</span>
+			<span class="right-block">
+				Address:
+				<input type="text" name="other_address">
+			</span><br>
+			<span class="left-block">
+				From:
+				<input type="numerical" name="other_from" maxlength=4 size=6>
+				To:
+				<input type="numerical" name="other_to" maxlength=4 size=6>
+			</span>
+			<span class="right-block">
+				<label class="radio-label" style="width:150px">Did you graduate?</label>
+				<span class="radio-group">
+					<input type="radio" name="other_grad" value="yes">Yes
+					<input type="radio" name="other_grad" value="no">No
+				</span>
+			</span>
 		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
-
+	
 	<fieldset>
-		<legend>Personal Statement</legend>
-		<div class="form-group">
-			<label class="control-label">Why do you deserve this job?</label>
-			<textarea class="form-control" name="deserve" rows="6"></textarea>
-		</div>
-		<div class="form-group">
-			<label class="control-label">Describe a recent project</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
+		<legend>References</legend>
+		<div class="form-group lr-block">
+			<span class="left-block">
+				<label>Full name:</label>
+				<input type="text" name="ref_1_name">
+			</span>
+			<span class="right-block">
+				<label>Relationship:</label>
+				<input type="text" name="ref_1_rel">
+			</span><br>
+			<span class="left-block">
+				<label>Company:</label>
+				<input type="text" name="ref_1_company">
+			</span>
+			<span class="right-block">
+				<label>Phone:</label>
+				<input type="text" name="ref_1_phone">
+			</span>
 		</div>
 	</fieldset>
-
+	
+	<p>&nbsp;</p>
+	
+	<fieldset>
+		<legend>Previous Employment</legend>
+		<div class="form-group lr-block">
+			<span class="left-block">
+				<label>Company:</label>
+				<input type="text" name="comp_1_name">
+			</span>
+			<span class="right-block">
+				<label>Phone:</label>
+				<input type="text" name="comp_1_phone">
+			</span><br>
+			<span class="left-block">
+				<label>Address:</label>
+				<input type="text" name="comp_1_addr">
+			</span>
+			<span class="right-block">
+				<label>Supervisor:</label>
+				<input type="text" name="comp_1_spvsr">
+			</span><br>
+			<span class="left-block">
+				<label>Job Title:</label>
+				<input type="text" name="comp_1_job">
+			</span>
+			<span class="right-block">
+				<label>Starting Salary: $</label>
+				<input type="numerical" name="comp_1_salarysta" size=8>
+				<label>Final Salary: $</label>
+				<input type="numerical" name="comp_1_salaryfin" size=8>
+			</span><br>
+			<div>
+				<label>Responsibilities:</label>
+				<input type="text" name="comp_1_resp" size=50>
+			</div>
+			<span class="left-block">
+				<label>From:</label>
+				<input type="datetime" name="comp_1_from" size=8>
+				<label>To:</label>
+				<input type="datetime" name="comp_1_to" size=8>
+			</span>
+			<span class="right-block">
+				<label>Reason for Leaving:</label>
+				<input type="text" name="comp_1_leave">
+			</span><br>
+			<div>
+				<label class="radio-label" style="width:450px;">May we contact your previous supervisor for a reference?</label>
+				<span class="radio-group">
+					<input type="radio" name="other_grad" value="yes">Yes
+					<input type="radio" name="other_grad" value="no">No
+				</span>
+			</div>
+		</div>
+	</fieldset>
+	
 	<p>&nbsp;</p>
 
 	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
