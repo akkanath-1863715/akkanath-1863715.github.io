@@ -1,0 +1,65 @@
+h2, legend{
+	text-align:center;
+}
+
+fieldset{
+	padding:.35em .625em;
+	margin:auto;
+	border:1px solid #c0c0c0;
+	width:900px;
+}
+
+legend{
+	padding:auto;
+	width:100%;
+	border:1px solid #ccc;
+	background-color:#333;
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+}
+
+body{
+	font-family:"Calibri";
+}
+
+.form-group{
+	margin:5px;
+}
+
+.half-block{
+	width:440px;
+	display:inline-block;
+}
+
+.radio-label{
+	display:inline-block;
+	width:300px;
+}
+
+input, textarea, select{
+	padding: 3px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit]{
+	max-width:450px;
+	width:100%;
+	padding: 12px 20px;
+	border:0;
+	background-color: #8250e6;
+	color: #fff;
+	margin:auto;
+	display:block;
+}
+
+input[type=submit]:hover{
+	background-color: #4b2e83;
+}
+
+textarea{
+	margin:0px 0 -50px 0;
+}
